@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Ethereal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2a3d4f 0%, #afdeee 100%);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Background animation */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%);
+            top: -50%;
+            left: -50%;
+            animation: glow 8s infinite alternate;
+            z-index: -1;
+        }
+
+        /* Keyframes for background animation */
+        @keyframes glow {
+            0% { transform: scale(1.05); }
+            100% { transform: scale(1.2); }
+        }
+
+        /* Sign-in container styling */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 3rem 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            color: #6b6b83;
+            margin-bottom: 1rem;
+        }
+
+        /* Input field styling */
+        .container input[type="text"], .container input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background: #8ec5fc;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .container input[type="submit"]:hover {
+            background: #e0c3fc;
+        }
+
+        .container p {
+            font-size: 0.9rem;
+            color: #6b6b83;
+            margin-top: 1.5rem;
+        }
+
+        .container p a {
+            color: #8ec5fc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .container p a:hover {
+            color: #e0c3fc;
+        }
+
+        /* Social sign-in button styles */
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            color: white;
+        }
+
+        .google {
+            background: #4285f4; /* Google blue */
+        }
+
+        .apple {
+            background: #333333; /* Apple black */
+        }
+
+        .social-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="font-family: EB Garamond;">Sign In</h1>
+        <form action="#">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+
+        <!-- Social Sign-In Buttons -->
+        <div class="social-buttons">
+            <button class="social-button google">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEndPkpxU-FDOQK0acJ6iuFECTI914xOelQ&s" alt="Google Logo">
+                <h4 style="font-family: EB Garamond;">Sign in with Google</h4>
+            </button>
+            <button class="social-button apple">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+                <h4 style="font-family: EB Garamond;">Sign in with Apple</h4>
+            </button>
+        </div>
+        <!-- Back to Home Button -->
+        <h4 style="font-family: EB Garamond;"><a href="index.html" class="home-button">Back to Home</a></h4>
+        <p style="font-family: EB Garamond;">Already have an account? <a href="#">Login here!</a></p>
+    </div>
+ 
+    </body>
+    </html>
+

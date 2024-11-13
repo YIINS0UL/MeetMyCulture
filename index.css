@@ -1,0 +1,175 @@
+
+    
+    /* Style for the sign-in box */
+.sign-in-box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style for the buttons */
+.sign-in-box button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+/* Hover effect for buttons */
+.sign-in-box button:hover {
+    background-color: #e0e0e0;
+}
+
+    
+    body {
+        font-family: 'EB Garamond', serif;
+        background-color: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Navigation Bar */
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-bar a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .nav-bar a:hover {
+        color: #007BFF;
+    }
+
+    /* Sidebar Buttons */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .sidebar button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 12px 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 600;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        width: 180px;
+    }
+
+    .sidebar button:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Slider Section */
+    .slider {
+        margin: 30px auto;
+        width: 80%;
+        max-width: 900px;
+        border: 1px solid #ddd;
+        padding: 40px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .slider div {
+        font-size: 18px;
+        color: #555;
+    }
+
+    /* Main Action Buttons */
+    .main-buttons {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    .main-buttons button {
+        padding: 12px 30px;
+        margin: 0 15px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-buttons button:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Icon Section */
+    .icon-set {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .icon-set img {
+        margin: 0 20px;
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    .icon-set img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 60px;
+        font-size: 14px;
+        color: #777;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        padding: 20px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    }

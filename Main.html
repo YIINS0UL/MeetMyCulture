@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetMyCulture</title>
+    <style>
+        /* Basic styling for layout */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #afdeee;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 20%;
+            background-color: #fff;
+            padding: 20px;
+            float: left;
+            box-sizing: border-box;
+        }
+        
+        /* Main content styling */
+        .main-content {
+            width: 80%;
+            float: right;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
+        }
+        
+        .navbar a:hover {
+            color: #007acc;
+        }
+
+        .search-bar {
+            padding: 5px;
+            width: 200px;
+        }
+        
+        /* Styling for content blocks */
+        .content-block {
+            display: flex;
+            margin-top: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+        
+        .content-block img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .content-info {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Sidebar with large images -->
+    <div class="sidebar">
+        <img src="https://i.pinimg.com/736x/52/40/27/5240278bb877bdc82e292c9f61f22760.jpg" alt="Sidebar Image" style="width:250px;height:300px;">
+        <img src="https://i.pinimg.com/564x/fc/f0/de/fcf0def3942d654fed77f28c819445bf.jpg" alt="Sidebar Image" style="width:250px;height:300px;">
+        <img src="https://i.pinimg.com/564x/a6/57/f4/a657f4faa45915173361003c1aac95ac.jpg" alt="Sidebar Image" style="width:250px;height:300px;">
+        <img src="https://i.pinimg.com/564x/65/10/19/651019961db83a286e78dc340096bfff.jpg" alt="Sidebar Image" style="width:250px;height:300px;">
+        <img src="https://i.pinimg.com/564x/7b/e3/94/7be39493bef5f40b46dd066527b1232f.jpg" alt="Sidebar Image" style="width:250px;height:300px;">
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        
+        <!-- Navbar with Home, Socials, Help, and Search -->
+        <div class="navbar">
+            <div>
+                <a href="#home" onclick="alert('Home Button Clicked')">Home</a>
+                <a href="#socials" onclick="alert('Socials Button Clicked')">Socials</a>
+                <a href="#help" onclick="alert('Help Button Clicked')">Help</a>
+            </div>
+            <input type="text" class="search-bar" placeholder="Search..." oninput="searchFunction(this.value)">
+        </div>
+
+        <!-- Content area with titles and information -->
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+            
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>Title</strong><br>
+                Information
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="https://via.placeholder.com/50" alt="Image">
+            <div class="content-info">
+                <strong>More</strong><br>
+                See more..
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript for search functionality -->
+    <script>
+        function searchFunction(value) {
+            console.log("Search term:", value);  // This will log the search term as you type it
+        }
+    </script>
+</body>
+</html>
+
